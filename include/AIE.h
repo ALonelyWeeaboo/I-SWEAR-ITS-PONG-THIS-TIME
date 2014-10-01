@@ -9,6 +9,7 @@
 #ifndef _AIE_H_
 
 #define _AIE_H_
+<<<<<<< HEAD
 #define 	GLFW_KEY_UNKNOWN   -1
 
 #define 	GLFW_KEY_SPACE   32
@@ -252,6 +253,9 @@
 #define 	GLFW_KEY_MENU   348
 
 #define 	GLFW_KEY_LAST   GLFW_KEY_MENU
+=======
+
+>>>>>>> origin/master
 /**
 * DLL Export Define
 **/

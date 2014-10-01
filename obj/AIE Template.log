@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 ﻿Build started 10/1/2014 12:39:45 PM.
+=======
+﻿Build started 9/30/2014 5:23:11 PM.
+>>>>>>> origin/master
      1>Project "C:\Users\landon.haggerty\Desktop\AIE Year1 Framework VS2013 - SOMETHING DIFFERENT\AIEFRAMEWORKPONG\AIE Template.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /I./include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\\" /Fd"obj\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt source\main.cpp
          main.cpp
+<<<<<<< HEAD
      1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(169): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
      1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(189): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
      1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(190): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
@@ -13,6 +18,18 @@
      1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(315): warning C4129: '^' : unrecognized character escape sequence
      1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(315): warning C4129: ')' : unrecognized character escape sequence
      1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(315): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+=======
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(132): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(151): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(152): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(195): warning C4552: '>' : operator has no effect; expected operator with side-effect
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(206): warning C4552: '>' : operator has no effect; expected operator with side-effect
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(219): warning C4552: '>' : operator has no effect; expected operator with side-effect
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(230): warning C4552: '>' : operator has no effect; expected operator with side-effect
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(238): warning C4129: '^' : unrecognized character escape sequence
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(238): warning C4129: ')' : unrecognized character escape sequence
+     1>c:\users\landon.haggerty\desktop\aie year1 framework vs2013 - something different\aieframeworkpong\source\main.cpp(238): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+>>>>>>> origin/master
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\AIE Template_d.exe" /INCREMENTAL /NOLOGO /LIBPATH:./libs AIE_1st_Year_Framework_d.lib kernel32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\AIE Template_d.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"bin\AIE Template_d.lib" /MACHINE:X86 obj\main.obj
          AIE_1st_Year_Framework_d.lib(SOIL.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
@@ -48,4 +65,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:01.48
+=======
+Time Elapsed 00:00:01.83
+>>>>>>> origin/master

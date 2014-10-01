@@ -17,12 +17,18 @@ struct paddle
 
 public:
 	unsigned int SpriteID = CreateSprite("./images/paddle.png", 30, 92, true);
+<<<<<<< HEAD
 	float Width = 30;
 	float Height = 92;
+=======
+	float fWidth;
+	float fHeight;
+>>>>>>> origin/master
 	float x = 0;
 	float y = 0;
 	float paddleSpeedX = 0;
 	float paddleSpeedY = 0;
+<<<<<<< HEAD
 	float topleftx;
 	float toplefty;
 	float toprightx;
@@ -32,11 +38,15 @@ public:
 	float bottomrightx;
 	float bottomrighty;
 
+=======
+	
+>>>>>>> origin/master
 	void Move(float deltatime)
 	{
 		x += paddleSpeedX * deltatime;
 		y += paddleSpeedY * deltatime;
 		MoveSprite(SpriteID, x, y);
+<<<<<<< HEAD
 
 		topleftx = x - Width / 2;
 		toplefty = y + Height / 2;
@@ -47,6 +57,8 @@ public:
 		bottomrightx = x + Width / 2;
 		bottomrighty = y - Height / 2;
 
+=======
+>>>>>>> origin/master
 	}
 
 
@@ -56,8 +68,12 @@ public:
 		DrawSprite(SpriteID);
 	}
 	
+<<<<<<< HEAD
 
 
+=======
+	
+>>>>>>> origin/master
 	
 };
 
@@ -70,6 +86,7 @@ public:
 	float fHeight;
 	float x = 450;
 	float y = 300;
+<<<<<<< HEAD
 	float Width = 12;
 	float Height = 13;
 	float ballSpeedX = 20;
@@ -83,6 +100,12 @@ public:
 	float bottomlefty;
 	float bottomrightx;
 	float bottomrighty;
+=======
+	float Width;
+	float Height;
+	float ballSpeedX = 10;
+	float ballSpeedY = 10;
+>>>>>>> origin/master
 
 
 	void Move(float deltatime)
@@ -91,6 +114,7 @@ public:
 		y += ballSpeedY * deltatime;
 		MoveSprite(SpriteID, x, y);
 		
+<<<<<<< HEAD
 		topleftx = x - Width / 2;
 		toplefty = y + Height / 2;
 		toprightx = x + Width / 2;
@@ -99,6 +123,8 @@ public:
 		bottomlefty = y - Height / 2;
 		bottomrightx = x + Width / 2;
 		bottomrighty = y - Height / 2;
+=======
+>>>>>>> origin/master
 	}
 	void Draw()
 	{
@@ -126,7 +152,10 @@ void UpdateGamestate();
 
 int main(int argc, char** argv[])
 {
+<<<<<<< HEAD
 	bool IsGameRunning = true;
+=======
+>>>>>>> origin/master
 	//The Window
 	Initialise(iScreenWidth, iScreenHeight, false, "Gnpo");
 
@@ -147,8 +176,13 @@ int main(int argc, char** argv[])
 	player2.y = 300.f;
 
 	pongball thepongball;
+<<<<<<< HEAD
 	thepongball.x = 300.f;
 	thepongball.y = 450.f;
+=======
+	thepongball.x = 0.f;
+	thepongball.y = 20.f;
+>>>>>>> origin/master
 
 
 	do // <- gameloop 
@@ -181,16 +215,23 @@ int main(int argc, char** argv[])
 			player1.Move(deltatime);
 			player2.Move(deltatime);
 			player2.Draw();
+<<<<<<< HEAD
 
 			("Press 1 to play");
 
 			float d = 2;
+=======
+			
+			("Press 1 to play");
+
+>>>>>>> origin/master
 
 			DrawString("PLAYER 1: ", iScreenWidth * 0.02f, iScreenHeight - 2);
 			DrawString("PLAYER 2: ", iScreenWidth * 0.65f, iScreenHeight - 2);
 
 			thepongball.Draw();
 			thepongball.Move(deltatime);
+<<<<<<< HEAD
 
 			//GETTING THIS BABY TO BOUNCE BACK AND DISAPPEAR
 			//right side
@@ -215,6 +256,30 @@ int main(int argc, char** argv[])
 
 			}
 			//down
+=======
+			
+			//GETTING THIS BABY TO BOUNCE BACK
+			if (thepongball.x >= 900)
+			{
+				thepongball.ballSpeedX = thepongball.ballSpeedX * -1.f;
+				thepongball.Move(deltatime);
+
+			}
+				if (thepongball.x <= 0)
+			{
+				thepongball.ballSpeedX = thepongball.ballSpeedX * -1.f;
+				thepongball.Move(deltatime * 2.f);
+			}
+			
+			////try
+			if (thepongball.y >= 600)
+			{
+				thepongball.ballSpeedY = thepongball.ballSpeedY * -1.f;
+			thepongball.Move(deltatime);
+
+			}
+
+>>>>>>> origin/master
 			if (thepongball.y <= 00)
 			{
 				thepongball.ballSpeedY = thepongball.ballSpeedY * -1.f;
@@ -222,6 +287,7 @@ int main(int argc, char** argv[])
 
 			}
 
+<<<<<<< HEAD
 			//COLLIDE PLAYER 1
 			if (thepongball.topleftx < player1.toprightx)
 			{
@@ -260,6 +326,9 @@ int main(int argc, char** argv[])
 
 
 
+=======
+			
+>>>>>>> origin/master
 
 			//player 1
 			//going up
@@ -288,7 +357,11 @@ int main(int argc, char** argv[])
 
 			//player 2
 			//P2 going up
+<<<<<<< HEAD
 			if (IsKeyDown(GLFW_KEY_UP))
+=======
+			if (IsKeyDown('O'))
+>>>>>>> origin/master
 			{
 				player2.y += deltatime * 30.f;
 				if (player2.y > -128.0f)
@@ -299,7 +372,11 @@ int main(int argc, char** argv[])
 			}
 
 			//P2 going down
+<<<<<<< HEAD
 			if (IsKeyDown(GLFW_KEY_DOWN))
+=======
+			if (IsKeyDown('L'))
+>>>>>>> origin/master
 			{
 				player2.y -= deltatime * 30.f;
 				if (player2.y > 64.f)
@@ -307,13 +384,20 @@ int main(int argc, char** argv[])
 					player2.y > 64.0f;
 					player2.Move(player2.y);
 				}
+<<<<<<< HEAD
 
 			}
 
+=======
+				
+			}
+		
+>>>>>>> origin/master
 			if (IsKeyDown('C'))
 			{
 				DrawString("(/\^O^/\)", iScreenWidth * 0.30f, iScreenHeight * .80f);
 			}
+<<<<<<< HEAD
 
 			if (IsKeyDown(GLFW_KEY_ESCAPE))
 			{
@@ -321,6 +405,8 @@ int main(int argc, char** argv[])
 				IsGameRunning = false;
 			}
 			
+=======
+>>>>>>> origin/master
 		}
 		switch (eCurrentState)
 
@@ -344,8 +430,13 @@ int main(int argc, char** argv[])
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	while (FrameworkUpdate() == false && IsGameRunning);
+=======
+
+	while (FrameworkUpdate() == false);
+>>>>>>> origin/master
 	
 	Shutdown();
 
